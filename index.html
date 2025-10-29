@@ -1,1 +1,60 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merry Harper</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9fb;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chat-box {
+      width: 90%;
+      max-width: 420px;
+      height: 60vh;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      overflow-y: auto;
+    }
+    .input-box {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Merry Harper</h2>
+  <div class="chat-box" id="chatBox"></div>
+  <div class="input-box">
+    <input id="userInput" type="text" placeholder="Type here..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+  </html>
